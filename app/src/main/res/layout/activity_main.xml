@@ -6,13 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/sangriaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="32dp"
+        android:text="Sangria"
+        app:layout_constraintBottom_toTopOf="@+id/trocoBtn"
+        app:layout_constraintEnd_toEndOf="@+id/trocoBtn"
+        app:layout_constraintStart_toStartOf="@+id/trocoBtn" />
+
+    <Button
+        android:id="@+id/abastecimentoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="abastecer"
+        app:layout_constraintEnd_toEndOf="@+id/trocoBtn"
+        app:layout_constraintStart_toStartOf="@+id/trocoBtn"
+        app:layout_constraintTop_toBottomOf="@+id/trocoBtn" />
+
+    <Button
+        android:id="@+id/trocoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="troco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
