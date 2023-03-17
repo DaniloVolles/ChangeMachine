@@ -5,6 +5,9 @@ plugins {
 }
 
 android {
+    viewBinding {
+        enabled = true
+    }
     namespace 'com.example.changemachine'
     compileSdk 33
 
