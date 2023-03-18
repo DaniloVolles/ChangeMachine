@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FillCashDesk">
+
+    <!-- R$ 1.00 -->
+    <TextView
+        android:id="@+id/count100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn100Plus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn100Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count100" />
+
+    <Button
+        android:id="@+id/btn100Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count100"
+        app:layout_constraintEnd_toStartOf="@+id/count100"
+        app:layout_constraintTop_toTopOf="@+id/count100" />
+
+    <TextView
+        android:id="@+id/strCoin100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$1.00"
+        app:layout_constraintBottom_toBottomOf="@+id/count100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count100"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- R$0.50 -->
+    <TextView
+        android:id="@+id/count050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn050Plus"
+        app:layout_constraintTop_toBottomOf="@+id/count100" />
+
+    <Button
+        android:id="@+id/btn050Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count050"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count050" />
+
+    <Button
+        android:id="@+id/btn050Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count050"
+        app:layout_constraintEnd_toStartOf="@+id/count050"
+        app:layout_constraintTop_toTopOf="@+id/count050" />
+
+    <TextView
+        android:id="@+id/strCoin050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$0.50"
+        app:layout_constraintBottom_toBottomOf="@+id/count050"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count050"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- R$0.25 -->
+    <TextView
+        android:id="@+id/count025"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn025Plus"
+        app:layout_constraintTop_toBottomOf="@+id/count050" />
+
+    <Button
+        android:id="@+id/btn025Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count025"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count025" />
+
+    <Button
+        android:id="@+id/btn025Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count025"
+        app:layout_constraintEnd_toStartOf="@+id/count025"
+        app:layout_constraintTop_toTopOf="@+id/count025" />
+
+    <TextView
+        android:id="@+id/strCoin025"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$0.25"
+        app:layout_constraintBottom_toBottomOf="@+id/count025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count025"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- R$0.10 -->
+    <TextView
+        android:id="@+id/count010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn010Plus"
+        app:layout_constraintTop_toBottomOf="@+id/count025" />
+
+    <Button
+        android:id="@+id/btn010Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count010" />
+
+    <Button
+        android:id="@+id/btn010Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count010"
+        app:layout_constraintEnd_toStartOf="@+id/count010"
+        app:layout_constraintTop_toTopOf="@+id/count010" />
+
+    <TextView
+        android:id="@+id/strCoin010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$0.10"
+        app:layout_constraintBottom_toBottomOf="@+id/count010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count010"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- R$0.05 -->
+    <TextView
+        android:id="@+id/count005"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn005Plus"
+        app:layout_constraintTop_toBottomOf="@+id/count010" />
+
+    <Button
+        android:id="@+id/btn005Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count005"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count005" />
+
+    <Button
+        android:id="@+id/btn005Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count005"
+        app:layout_constraintEnd_toStartOf="@+id/count005"
+        app:layout_constraintTop_toTopOf="@+id/count005" />
+
+    <TextView
+        android:id="@+id/strCoin005"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$0.05"
+        app:layout_constraintBottom_toBottomOf="@+id/count005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count005"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- R$0.01 -->
+    <TextView
+        android:id="@+id/count001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/btn001Plus"
+        app:layout_constraintTop_toBottomOf="@+id/count005" />
+
+    <Button
+        android:id="@+id/btn001Plus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Plus"
+        app:layout_constraintBottom_toBottomOf="@+id/count001"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count001" />
+
+    <Button
+        android:id="@+id/btn001Minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Minus"
+        app:layout_constraintBottom_toBottomOf="@+id/count001"
+        app:layout_constraintEnd_toStartOf="@+id/count001"
+        app:layout_constraintTop_toTopOf="@+id/count001" />
+
+    <TextView
+        android:id="@+id/strCoin001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="R$0.01"
+        app:layout_constraintBottom_toBottomOf="@+id/count001"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/count001"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

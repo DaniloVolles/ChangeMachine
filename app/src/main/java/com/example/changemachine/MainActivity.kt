@@ -1,10 +1,11 @@
 package com.example.changemachine
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 
 import com.example.changemachine.databinding.ActivityMainBinding
+import com.example.changemachine.ui.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +18,22 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.viewDB.setOnClickListener {
+            val intent = Intent(this,ViewCoins::class.java)
+            startActivity(intent)
+        }
 
+        binding.fillCashDeskBtn.setOnClickListener {
+            val intent = Intent(this, FillCashDesk::class.java)
+            startActivity(intent)
+        }
+
+        binding.withdrawalBtn.setOnClickListener {
+            sangriaFunction()
+        }
+
+        binding.changeBtn.setOnClickListener {
+            trocoFunction()
+        }
     }
 }

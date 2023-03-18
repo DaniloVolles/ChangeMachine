@@ -7,32 +7,43 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/sangriaBtn"
+        android:id="@+id/withdrawalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:text="Sangria"
-        app:layout_constraintBottom_toTopOf="@+id/trocoBtn"
-        app:layout_constraintEnd_toEndOf="@+id/trocoBtn"
-        app:layout_constraintStart_toStartOf="@+id/trocoBtn" />
+        android:text="@string/sangria"
+        app:layout_constraintBottom_toTopOf="@+id/changeBtn"
+        app:layout_constraintEnd_toEndOf="@+id/changeBtn"
+        app:layout_constraintStart_toStartOf="@+id/changeBtn" />
 
     <Button
-        android:id="@+id/abastecimentoBtn"
+        android:id="@+id/fillCashDeskBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="abastecer"
-        app:layout_constraintEnd_toEndOf="@+id/trocoBtn"
-        app:layout_constraintStart_toStartOf="@+id/trocoBtn"
-        app:layout_constraintTop_toBottomOf="@+id/trocoBtn" />
+        android:text="@string/abastecer"
+        app:layout_constraintEnd_toEndOf="@+id/changeBtn"
+        app:layout_constraintStart_toStartOf="@+id/changeBtn"
+        app:layout_constraintTop_toBottomOf="@+id/changeBtn" />
 
     <Button
-        android:id="@+id/trocoBtn"
+        android:id="@+id/changeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="troco"
+        android:layout_marginBottom="64dp"
+        android:text="@string/troco"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/viewDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/conferir_caixa"
+        app:layout_constraintEnd_toEndOf="@+id/fillCashDeskBtn"
+        app:layout_constraintStart_toStartOf="@+id/fillCashDeskBtn"
+        app:layout_constraintTop_toBottomOf="@+id/fillCashDeskBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

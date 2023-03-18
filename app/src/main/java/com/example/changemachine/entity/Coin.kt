@@ -2,16 +2,16 @@ package com.example.changemachine.entity
 
 class Coin(private val value: Double, private var quantity: Int) {
 
-    fun coinIn () {
+    fun coinIn() {
         quantity++
     }
 
-    fun coinOut () {
+    fun coinOut() {
         quantity--
     }
 
-    fun printStatusCoin () {
-        println("Valor: $value, Quantidade: $quantity")
+    fun printStatus() {
+        println("Value: $value, Quantity: $quantity")
     }
 }
 

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ChangeMachine</string>
+    <string name="sangria">Sangria</string>
+    <string name="abastecer">abastecer</string>
+    <string name="troco">troco</string>
+    <string name="conferir_caixa">Conferir Caixa</string>
+    <string name="_0">0</string>
+    <string name="Plus">+</string>
+    <string name="Minus">-</string>
 </resources>
