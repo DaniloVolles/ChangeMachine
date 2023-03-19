@@ -2,8 +2,11 @@ package com.example.changemachine
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
 import com.example.changemachine.databinding.ActivityFillCashDeskBinding
+import com.example.changemachine.entity.cent100
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FillCashDesk : AppCompatActivity() {
@@ -88,13 +91,15 @@ class FillCashDesk : AppCompatActivity() {
         }
 
         // Salvar
-//        binding.saveBtn.setOnClickListener {
-//            db.collection("Coin").document("cent100")
-//                .update("Quantity", display100(text)).addOnCompleteListener {
-//                    Log.d("db", "Valor atualizado com sucesso")
-//                }
-//            db.collection("Coin").document()
-//        }
+        binding.saveBtn.setOnClickListener {
+            db.collection("Coin").document("cent100")
+                .update(
+                    "quantity",
+                    FieldValue.increment(10)
+                ).addOnCompleteListener {
+                    Log.d("db", "Valor atualizado com sucesso")
+                }
+        }
     }
 
     private fun display100 (number: Int) {
