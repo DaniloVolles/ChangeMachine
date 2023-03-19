@@ -7,13 +7,14 @@
     tools:context=".FillCashDesk">
 
     <!-- R$ 1.00 -->
-    <TextView
+    <EditText
         android:id="@+id/count100"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn100Plus"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -49,13 +50,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- R$0.50 -->
-    <TextView
+    <EditText
         android:id="@+id/count050"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn050Plus"
         app:layout_constraintTop_toBottomOf="@+id/count100" />
 
@@ -91,13 +93,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- R$0.25 -->
-    <TextView
+    <EditText
         android:id="@+id/count025"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn025Plus"
         app:layout_constraintTop_toBottomOf="@+id/count050" />
 
@@ -133,13 +136,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- R$0.10 -->
-    <TextView
+    <EditText
         android:id="@+id/count010"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn010Plus"
         app:layout_constraintTop_toBottomOf="@+id/count025" />
 
@@ -175,13 +179,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- R$0.05 -->
-    <TextView
+    <EditText
         android:id="@+id/count005"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn005Plus"
         app:layout_constraintTop_toBottomOf="@+id/count010" />
 
@@ -217,13 +222,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <!-- R$0.01 -->
-    <TextView
+    <EditText
         android:id="@+id/count001"
-        android:layout_width="wrap_content"
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
         android:text="@string/_0"
+        android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/btn001Plus"
         app:layout_constraintTop_toBottomOf="@+id/count005" />
 
@@ -264,5 +270,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
