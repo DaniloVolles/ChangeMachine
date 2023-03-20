@@ -1,22 +1,20 @@
 package com.example.changemachine
 
+/*
+Aqui nessa página, eu precisei misturar o lambda com o formato padrão da "findView" por que
+estava dando um problema de tipo nas "funções" de increase/decrease de cada moeda.
+Consegui resolver. Caso eu tenha sucesso e bem-ventura no tempo, pretendo olhar com mais
+calma para a lógica desta activity.
+ */
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.EditText
 import com.example.changemachine.databinding.ActivityFillCashDeskBinding
-import com.example.changemachine.entity.cent100
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FillCashDesk : AppCompatActivity() {
-
-    private lateinit var count100ET: EditText
-    private lateinit var count050ET: EditText
-    private lateinit var count025ET: EditText
-    private lateinit var count010ET: EditText
-    private lateinit var count005ET: EditText
-    private lateinit var count001ET: EditText
 
     private lateinit var binding: ActivityFillCashDeskBinding
     private val db = FirebaseFirestore.getInstance()
@@ -31,63 +29,56 @@ class FillCashDesk : AppCompatActivity() {
         setContentView(binding.root)
 
         // R$1.00
-        count100ET = findViewById(R.id.count100)
-
         binding.btn100Plus.setOnClickListener {
-            display100(count100ET.text.toString().toInt() + 1)
+            display100(binding.count100.text.toString().toInt() + 1)
         }
         binding.btn100Minus.setOnClickListener {
-            display100(count100ET.text.toString().toInt() - 1)
+            display100(binding.count100.text.toString().toInt() - 1)
         }
 
         // R$0.50
-        count050ET = findViewById(R.id.count050)
 
         binding.btn050Plus.setOnClickListener {
-            display050(count050ET.text.toString().toInt() + 1)
+            display050(binding.count050.text.toString().toInt() + 1)
         }
         binding.btn050Minus.setOnClickListener {
-            display050(count050ET.text.toString().toInt() - 1)
+            display050(binding.count050.text.toString().toInt() - 1)
         }
 
         // R$0.25
-        count025ET = findViewById(R.id.count025)
 
         binding.btn025Plus.setOnClickListener {
-            display025(count025ET.text.toString().toInt() + 1)
+            display025(binding.count025.text.toString().toInt() + 1)
         }
         binding.btn025Minus.setOnClickListener {
-            display025(count025ET.text.toString().toInt() - 1)
+            display025(binding.count025.text.toString().toInt() - 1)
         }
 
         // R$0.10
-        count010ET = findViewById(R.id.count010)
 
         binding.btn010Plus.setOnClickListener {
-            display010(count010ET.text.toString().toInt() + 1)
+            display010(binding.count010.text.toString().toInt() + 1)
         }
         binding.btn010Minus.setOnClickListener {
-            display010(count010ET.text.toString().toInt() - 1)
+            display010(binding.count010.text.toString().toInt() - 1)
         }
 
         // R$0.05
-        count005ET = findViewById(R.id.count005)
 
         binding.btn005Plus.setOnClickListener {
-            display005(count005ET.text.toString().toInt() + 1)
+            display005(binding.count005.text.toString().toInt() + 1)
         }
         binding.btn005Minus.setOnClickListener {
-            display005(count005ET.text.toString().toInt() - 1)
+            display005(binding.count005.text.toString().toInt() - 1)
         }
 
         // R$0.01
-        count001ET = findViewById(R.id.count001)
 
         binding.btn001Plus.setOnClickListener {
-            display001(count001ET.text.toString().toInt() + 1)
+            display001(binding.count001.text.toString().toInt() + 1)
         }
         binding.btn001Minus.setOnClickListener {
-            display001(count001ET.text.toString().toInt() - 1)
+            display001(binding.count001.text.toString().toInt() - 1)
         }
 
         // Salvar
