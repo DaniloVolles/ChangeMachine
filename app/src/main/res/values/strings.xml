@@ -15,4 +15,5 @@
     <string name="centavos5">R$0.05</string>
     <string name="centavos1">R$0.01</string>
     <string name="moedas_e_quantidades">Moedas e quantidades</string>
+    <string name="sacar">sacar</string>
 </resources>

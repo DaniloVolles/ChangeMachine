@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.withdrawalBtn.setOnClickListener {
-            sangriaFunction()
+            val intent = Intent(this, Withdrawal::class.java)
+            startActivity(intent)
         }
 
         binding.changeBtn.setOnClickListener {
