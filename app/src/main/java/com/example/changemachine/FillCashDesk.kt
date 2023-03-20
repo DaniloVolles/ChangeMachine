@@ -3,6 +3,7 @@ package com.example.changemachine
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.changemachine.databinding.ActivityFillCashDeskBinding
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
@@ -82,6 +83,7 @@ class FillCashDesk : AppCompatActivity() {
             save010()
             save005()
             save001()
+            Toast.makeText(this, "Moedas adicionadas", Toast.LENGTH_SHORT).show()
         }
     }
 

@@ -3,6 +3,7 @@ package com.example.changemachine
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import com.example.changemachine.databinding.ActivityWithdrawalBinding
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
@@ -80,6 +81,7 @@ class Withdrawal : AppCompatActivity() {
             save010()
             save005()
             save001()
+            Toast.makeText(this, "Moedas sacadas", Toast.LENGTH_SHORT).show()
         }
     }
 
