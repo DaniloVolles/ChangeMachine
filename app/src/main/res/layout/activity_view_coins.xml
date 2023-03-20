@@ -7,22 +7,133 @@
     tools:context=".ViewCoins">
 
     <TextView
-        android:id="@+id/quantityView"
+        android:id="@+id/titleShowQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="64dp"
+        android:text="@string/moedas_e_quantidades"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- R$ 1.00 -->
+    <TextView
+        android:id="@+id/quantity100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/titleShowQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/titleShowQuantity" />
+
+    <TextView
+        android:id="@+id/title100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos100"
+        app:layout_constraintStart_toStartOf="@+id/titleShowQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/titleShowQuantity" />
+
+    <!-- R$ 0.50 -->
+    <TextView
+        android:id="@+id/quantity050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/quantity100"
+        app:layout_constraintTop_toBottomOf="@+id/quantity100" />
+
+    <TextView
+        android:id="@+id/title050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos50"
+        app:layout_constraintStart_toStartOf="@+id/title100"
+        app:layout_constraintTop_toBottomOf="@+id/title100" />
+
+    <!-- R$ 0.25 -->
+    <TextView
+        android:id="@+id/quantity025"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/quantity050"
+        app:layout_constraintTop_toBottomOf="@+id/quantity050" />
+
+    <TextView
+        android:id="@+id/title025"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos25"
+        app:layout_constraintStart_toStartOf="@+id/title050"
+        app:layout_constraintTop_toBottomOf="@+id/title050" />
+
+    <!-- R$ 0.10 -->
+    <TextView
+        android:id="@+id/quantity010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/quantity025"
+        app:layout_constraintTop_toBottomOf="@+id/quantity025" />
+
+    <TextView
+        android:id="@+id/title010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos10"
+        app:layout_constraintStart_toStartOf="@+id/title025"
+        app:layout_constraintTop_toBottomOf="@+id/title025" />
+
+    <!-- R$ 0.05 -->
+    <TextView
+        android:id="@+id/quantity005"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/quantity010"
+        app:layout_constraintTop_toBottomOf="@+id/quantity010" />
+
+    <TextView
+        android:id="@+id/title005"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos5"
+        app:layout_constraintStart_toStartOf="@+id/title010"
+        app:layout_constraintTop_toBottomOf="@+id/title010" />
+
+    <!-- R$ 0.01 -->
+    <TextView
+        android:id="@+id/quantity001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/quantity005"
+        app:layout_constraintTop_toBottomOf="@+id/quantity005" />
+
+    <TextView
+        android:id="@+id/title001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/centavos1"
+        app:layout_constraintStart_toStartOf="@+id/title005"
+        app:layout_constraintTop_toBottomOf="@+id/title005" />
+
+    <!-- Botão - Visualizar -->
     <Button
         android:id="@+id/viewCoins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Visualizar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quantityView" />
+        app:layout_constraintEnd_toEndOf="@+id/quantity001"
+        app:layout_constraintStart_toStartOf="@+id/title001"
+        app:layout_constraintTop_toBottomOf="@+id/title001" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

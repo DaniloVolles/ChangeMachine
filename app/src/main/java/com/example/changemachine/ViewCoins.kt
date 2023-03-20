@@ -24,7 +24,42 @@ class ViewCoins : AppCompatActivity() {
                 .addSnapshotListener { document, _ ->
                     if (document != null) {
                         val quantity = document.getLong("quantity")
-                        binding.quantityView.text = quantity.toString()
+                        binding.quantity100.text = quantity.toString()
+                    }
+                }
+            db.collection("Coin").document("cent050")
+                .addSnapshotListener { document, _ ->
+                    if (document != null) {
+                        val quantity = document.getLong("quantity")
+                        binding.quantity050.text = quantity.toString()
+                    }
+                }
+            db.collection("Coin").document("cent025")
+                .addSnapshotListener { document, _ ->
+                    if (document != null) {
+                        val quantity = document.getLong("quantity")
+                        binding.quantity025.text = quantity.toString()
+                    }
+                }
+            db.collection("Coin").document("cent010")
+                .addSnapshotListener { document, _ ->
+                    if (document != null) {
+                        val quantity = document.getLong("quantity")
+                        binding.quantity010.text = quantity.toString()
+                    }
+                }
+            db.collection("Coin").document("cent005")
+                .addSnapshotListener { document, _ ->
+                    if (document != null) {
+                        val quantity = document.getLong("quantity")
+                        binding.quantity005.text = quantity.toString()
+                    }
+                }
+            db.collection("Coin").document("cent001")
+                .addSnapshotListener { document, _ ->
+                    if (document != null) {
+                        val quantity = document.getLong("quantity")
+                        binding.quantity001.text = quantity.toString()
                     }
                 }
         }
