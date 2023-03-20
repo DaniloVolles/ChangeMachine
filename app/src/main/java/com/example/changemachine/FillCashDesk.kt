@@ -1,12 +1,5 @@
 package com.example.changemachine
 
-/*
-Aqui nessa página, eu precisei misturar o lambda com o formato padrão da "findView" por que
-estava dando um problema de tipo nas "funções" de increase/decrease de cada moeda.
-Consegui resolver. Caso eu tenha sucesso e bem-ventura no tempo, pretendo olhar com mais
-calma para a lógica desta activity.
- */
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -83,14 +76,74 @@ class FillCashDesk : AppCompatActivity() {
 
         // Salvar
         binding.saveBtn.setOnClickListener {
-            db.collection("Coin").document("cent100")
-                .update(
-                    "quantity",
-                    FieldValue.increment(10)
-                ).addOnCompleteListener {
-                    Log.d("db", "Valor atualizado com sucesso")
-                }
+            save100()
+            save050()
+            save025()
+            save010()
+            save005()
+            save001()
         }
+    }
+
+    private fun save100() {
+        val input100 = binding.count100.text.toString().toLong()
+        db.collection("Coin").document("cent100")
+            .update(
+                "quantity",
+                FieldValue.increment(input100)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
+    }
+    private fun save050() {
+        val input050 = binding.count050.text.toString().toLong()
+        db.collection("Coin").document("cent050")
+            .update(
+                "quantity",
+                FieldValue.increment(input050)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
+    }
+    private fun save025() {
+        val input025 = binding.count025.text.toString().toLong()
+        db.collection("Coin").document("cent025")
+            .update(
+                "quantity",
+                FieldValue.increment(input025)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
+    }
+    private fun save010() {
+        val input010 = binding.count010.text.toString().toLong()
+        db.collection("Coin").document("cent010")
+            .update(
+                "quantity",
+                FieldValue.increment(input010)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
+    }
+    private fun save005() {
+        val input005 = binding.count005.text.toString().toLong()
+        db.collection("Coin").document("cent005")
+            .update(
+                "quantity",
+                FieldValue.increment(input005)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
+    }
+    private fun save001() {
+        val input001 = binding.count001.text.toString().toLong()
+        db.collection("Coin").document("cent001")
+            .update(
+                "quantity",
+                FieldValue.increment(input001)
+            ).addOnCompleteListener {
+                Log.d("db", "Valor atualizado com sucesso")
+            }
     }
 
     private fun display100 (number: Int) {
