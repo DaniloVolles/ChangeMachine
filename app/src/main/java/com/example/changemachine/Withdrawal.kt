@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.example.changemachine.databinding.ActivityWithdrawalBinding
+import com.example.changemachine.entity.*
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -89,63 +90,27 @@ class Withdrawal : AppCompatActivity() {
     // Save Functions
     private fun save100() {
         val input100 = binding.count100.text.toString().toLong()
-        db.collection("Coin").document("cent100")
-            .update(
-                "quantity",
-                FieldValue.increment(-input100)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent100.coinOut("cent100", input100, 1)
     }
     private fun save050() {
         val input050 = binding.count050.text.toString().toLong()
-        db.collection("Coin").document("cent050")
-            .update(
-                "quantity",
-                FieldValue.increment(-input050)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent050.coinOut("cent050", input050, 1)
     }
     private fun save025() {
         val input025 = binding.count025.text.toString().toLong()
-        db.collection("Coin").document("cent025")
-            .update(
-                "quantity",
-                FieldValue.increment(-input025)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent025.coinOut("cent025", input025, 1)
     }
     private fun save010() {
         val input010 = binding.count010.text.toString().toLong()
-        db.collection("Coin").document("cent010")
-            .update(
-                "quantity",
-                FieldValue.increment(-input010)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent010.coinOut("cent010", input010, 1)
     }
     private fun save005() {
         val input005 = binding.count005.text.toString().toLong()
-        db.collection("Coin").document("cent005")
-            .update(
-                "quantity",
-                FieldValue.increment(-input005)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent005.coinOut("cent005", input005, 1)
     }
     private fun save001() {
         val input001 = binding.count001.text.toString().toLong()
-        db.collection("Coin").document("cent001")
-            .update(
-                "quantity",
-                FieldValue.increment(-input001)
-            ).addOnCompleteListener {
-                Log.d("db", "Valor atualizado com sucesso")
-            }
+        cent001.coinOut("cent001", input001, 1)
     }
 
     // Display functions
