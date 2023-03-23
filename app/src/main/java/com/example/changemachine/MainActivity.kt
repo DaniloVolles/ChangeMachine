@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 import com.example.changemachine.databinding.ActivityMainBinding
-import com.example.changemachine.ui.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,7 +33,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.changeBtn.setOnClickListener {
-            trocoFunction()
+            val intent = Intent(this, Change::class.java)
+            startActivity(intent)
         }
     }
 }
