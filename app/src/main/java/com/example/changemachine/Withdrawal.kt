@@ -90,27 +90,27 @@ class Withdrawal : AppCompatActivity() {
     // Save Functions
     private fun save100() {
         val input100 = binding.count100.text.toString().toLong()
-        cent100.coinOut("cent100", input100, 1)
+        cent100.coinOut("cent100", input100)
     }
     private fun save050() {
         val input050 = binding.count050.text.toString().toLong()
-        cent050.coinOut("cent050", input050, 1)
+        cent050.coinOut("cent050", input050)
     }
     private fun save025() {
         val input025 = binding.count025.text.toString().toLong()
-        cent025.coinOut("cent025", input025, 1)
+        cent025.coinOut("cent025", input025)
     }
     private fun save010() {
         val input010 = binding.count010.text.toString().toLong()
-        cent010.coinOut("cent010", input010, 1)
+        cent010.coinOut("cent010", input010)
     }
     private fun save005() {
         val input005 = binding.count005.text.toString().toLong()
-        cent005.coinOut("cent005", input005, 1)
+        cent005.coinOut("cent005", input005)
     }
     private fun save001() {
         val input001 = binding.count001.text.toString().toLong()
-        cent001.coinOut("cent001", input001, 1)
+        cent001.coinOut("cent001", input001)
     }
 
     // Display functions

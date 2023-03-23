@@ -92,27 +92,27 @@ class FillCashDesk : AppCompatActivity() {
 
     private fun save100() {
         val input100 = binding.count100.text.toString().toLong()
-        cent100.coinIn("cent100", input100, 1)
+        cent100.coinIn("cent100", input100)
     }
     private fun save050() {
         val input050 = binding.count050.text.toString().toLong()
-        cent050.coinIn("cent050", input050, 1)
+        cent050.coinIn("cent050", input050)
     }
     private fun save025() {
         val input025 = binding.count025.text.toString().toLong()
-        cent025.coinIn("cent025", input025, 1)
+        cent025.coinIn("cent025", input025)
     }
     private fun save010() {
         val input010 = binding.count010.text.toString().toLong()
-        cent010.coinIn("cent010", input010, 1)
+        cent010.coinIn("cent010", input010)
     }
     private fun save005() {
         val input005 = binding.count005.text.toString().toLong()
-        cent005.coinIn("cent005", input005, 1)
+        cent005.coinIn("cent005", input005)
     }
     private fun save001() {
         val input001 = binding.count001.text.toString().toLong()
-        cent001.coinIn("cent001", input001, 1)
+        cent001.coinIn("cent001", input001)
     }
 
     private fun display100 (number: Int) {

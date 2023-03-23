@@ -7,37 +7,32 @@ import com.google.firebase.firestore.FirebaseFirestore
 data class Coin(
 
     private val value: Double,
-    private var quantity: Long
+//    private var quantity: Long
 
     ) {
 
-    private val db = FirebaseFirestore.getInstance()
+    private val coinRef = FirebaseFirestore.getInstance().collection("Coin")
 
-    fun coinIn (objectDBCoin: String, inputCoin: Long, amount: Long) {
+    fun coinIn (objectDBCoin: String, inputCoin: Long) {
 
-        db.collection("Coin").document(objectDBCoin)
+        coinRef.document(objectDBCoin)
             .update(
                 "quantity",
-                FieldValue.increment(inputCoin*amount)
+                FieldValue.increment(inputCoin)
             ).addOnCompleteListener {
                 Log.d("db", "Valor atualizado com sucesso")
             }
     }
 
-    fun coinOut(objectDBCoin: String, inputCoin: Long, amount: Long) {
+    fun coinOut(objectDBCoin: String, inputCoin: Long) {
 
-        db.collection("Coin").document(objectDBCoin)
+        coinRef.document(objectDBCoin)
             .update(
                 "quantity",
-                FieldValue.increment(-inputCoin*amount)
+                FieldValue.increment(-inputCoin)
             ).addOnCompleteListener {
                 Log.d("db", "Valor atualizado com sucesso")
             }
     }
-
-    fun printStatus() {
-        println("Value: $value, Quantity: $quantity")
-    }
-
 }
 
