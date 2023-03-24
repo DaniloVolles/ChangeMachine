@@ -2,19 +2,14 @@ package com.example.changemachine
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.EditText
 import android.widget.Toast
 import com.example.changemachine.databinding.ActivityFillCashDeskBinding
 import com.example.changemachine.entity.*
-import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 
 class FillCashDesk : AppCompatActivity() {
 
     private lateinit var binding: ActivityFillCashDeskBinding
-    private val db = FirebaseFirestore.getInstance()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -116,22 +111,51 @@ class FillCashDesk : AppCompatActivity() {
     }
 
     private fun display100 (number: Int) {
-        binding.count100.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count100.setText("$number")
+        }
     }
     private fun display050 (number: Int) {
-        binding.count050.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count050.setText("$number")
+        }
     }
     private fun display025 (number: Int) {
-        binding.count025.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count025.setText("$number")
+        }
     }
     private fun display010 (number: Int) {
-        binding.count010.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count010.setText("$number")
+        }
     }
     private fun display005 (number: Int) {
-        binding.count005.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count005.setText("$number")
+        }
     }
     private fun display001 (number: Int) {
-        binding.count001.setText("$number")
+        if (number < 0) {
+            Toast.makeText(this, "O número deve ser positivo", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            binding.count001.setText("$number")
+        }
     }
-
 }
