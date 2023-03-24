@@ -1,9 +1,8 @@
 # ChangeMachine
 
 ## Project Highlight
+![Emulator - ChangeMachine 2023-03-24 17-24-37](https://user-images.githubusercontent.com/107259505/227641840-f22628f1-bbeb-4210-a329-61f8f5b067db.gif)
 
-https://user-images.githubusercontent.com/107259505/227631983-33386ddb-0942-4370-9294-78c20e086120.mp4
-![image](https://user-images.githubusercontent.com/107259505/227632109-12b29f7d-4c09-4233-b758-a4ab490def77.png)
 
 ## About
 - It is a challenge to test my abilities to a job oportunity.
