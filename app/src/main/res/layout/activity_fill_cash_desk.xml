@@ -11,10 +11,12 @@
         android:id="@+id/count100"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/_0"
+        android:backgroundTint="@color/orange_900"
         android:inputType="number"
+        android:text="@string/_0"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn100Plus"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,7 +24,7 @@
         android:id="@+id/btn100Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count100"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,12 +44,11 @@
         android:id="@+id/strCoin100"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos100"
         app:layout_constraintBottom_toBottomOf="@+id/count100"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count100"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count100" />
 
     <!-- R$0.50 -->
     <EditText
@@ -56,8 +57,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange_900"
         android:text="@string/_0"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn050Plus"
         app:layout_constraintTop_toBottomOf="@+id/count100" />
 
@@ -65,7 +68,7 @@
         android:id="@+id/btn050Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count050"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,12 +88,11 @@
         android:id="@+id/strCoin050"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos50"
         app:layout_constraintBottom_toBottomOf="@+id/count050"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count050"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count050" />
 
     <!-- R$0.25 -->
     <EditText
@@ -99,8 +101,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange_900"
         android:text="@string/_0"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn025Plus"
         app:layout_constraintTop_toBottomOf="@+id/count050" />
 
@@ -108,7 +112,7 @@
         android:id="@+id/btn025Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count025"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,12 +132,11 @@
         android:id="@+id/strCoin025"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos25"
         app:layout_constraintBottom_toBottomOf="@+id/count025"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count025"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count025" />
 
     <!-- R$0.10 -->
     <EditText
@@ -142,8 +145,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange_900"
         android:text="@string/_0"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn010Plus"
         app:layout_constraintTop_toBottomOf="@+id/count025" />
 
@@ -151,7 +156,7 @@
         android:id="@+id/btn010Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count010"
         app:layout_constraintEnd_toEndOf="parent"
@@ -171,12 +176,11 @@
         android:id="@+id/strCoin010"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos10"
         app:layout_constraintBottom_toBottomOf="@+id/count010"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count010"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count010" />
 
     <!-- R$0.05 -->
     <EditText
@@ -185,8 +189,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange_900"
         android:text="@string/_0"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn005Plus"
         app:layout_constraintTop_toBottomOf="@+id/count010" />
 
@@ -194,7 +200,7 @@
         android:id="@+id/btn005Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count005"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,12 +220,11 @@
         android:id="@+id/strCoin005"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos5"
         app:layout_constraintBottom_toBottomOf="@+id/count005"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count005"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count005" />
 
     <!-- R$0.01 -->
     <EditText
@@ -228,8 +233,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/orange_900"
         android:text="@string/_0"
         android:inputType="number"
+        android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/btn001Plus"
         app:layout_constraintTop_toBottomOf="@+id/count005" />
 
@@ -237,7 +244,7 @@
         android:id="@+id/btn001Plus"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:text="@string/Plus"
         app:layout_constraintBottom_toBottomOf="@+id/count001"
         app:layout_constraintEnd_toEndOf="parent"
@@ -257,12 +264,11 @@
         android:id="@+id/strCoin001"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:text="@string/centavos1"
         app:layout_constraintBottom_toBottomOf="@+id/count001"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/count001"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/count001" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -275,7 +281,7 @@
         android:id="@+id/saveBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
         android:text="Depositar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

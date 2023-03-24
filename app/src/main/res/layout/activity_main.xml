@@ -10,40 +10,44 @@
         android:id="@+id/withdrawalBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/orange_500"
         android:text="@string/sangria"
-        app:layout_constraintBottom_toTopOf="@+id/changeBtn"
-        app:layout_constraintEnd_toEndOf="@+id/changeBtn"
-        app:layout_constraintStart_toStartOf="@+id/changeBtn" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/fillCashDeskBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange_500"
         android:layout_marginTop="32dp"
         android:text="@string/abastecer"
-        app:layout_constraintEnd_toEndOf="@+id/changeBtn"
-        app:layout_constraintStart_toStartOf="@+id/changeBtn"
-        app:layout_constraintTop_toBottomOf="@+id/changeBtn" />
+        app:layout_constraintEnd_toEndOf="@+id/withdrawalBtn"
+        app:layout_constraintStart_toStartOf="@+id/withdrawalBtn"
+        app:layout_constraintTop_toBottomOf="@+id/withdrawalBtn" />
 
     <Button
         android:id="@+id/changeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/orange_500"
         android:text="@string/troco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/withdrawalBtn"
+        app:layout_constraintEnd_toEndOf="@+id/withdrawalBtn"
+        app:layout_constraintStart_toStartOf="@+id/withdrawalBtn" />
 
     <Button
         android:id="@+id/viewDB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange_500"
         android:layout_marginTop="32dp"
         android:text="@string/conferir_caixa"
-        app:layout_constraintEnd_toEndOf="@+id/fillCashDeskBtn"
-        app:layout_constraintStart_toStartOf="@+id/fillCashDeskBtn"
+        app:layout_constraintEnd_toEndOf="@+id/withdrawalBtn"
+        app:layout_constraintStart_toStartOf="@+id/withdrawalBtn"
         app:layout_constraintTop_toBottomOf="@+id/fillCashDeskBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

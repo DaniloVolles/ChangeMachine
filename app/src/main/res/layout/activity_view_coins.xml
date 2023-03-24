@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
+        android:textColor="@color/orange_900"
         android:text="@string/moedas_e_quantidades"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/titleShowQuantity"
         app:layout_constraintTop_toBottomOf="@+id/titleShowQuantity" />
 
@@ -40,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/quantity100"
         app:layout_constraintTop_toBottomOf="@+id/quantity100" />
 
@@ -58,6 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/quantity050"
         app:layout_constraintTop_toBottomOf="@+id/quantity050" />
 
@@ -76,6 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/quantity025"
         app:layout_constraintTop_toBottomOf="@+id/quantity025" />
 
@@ -94,6 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/quantity010"
         app:layout_constraintTop_toBottomOf="@+id/quantity010" />
 
@@ -112,6 +118,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:textColor="@color/orange_900"
         app:layout_constraintEnd_toEndOf="@+id/quantity005"
         app:layout_constraintTop_toBottomOf="@+id/quantity005" />
 
