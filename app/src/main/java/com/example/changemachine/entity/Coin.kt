@@ -11,7 +11,8 @@ data class Coin(
 
     ) {
 
-    private val coinRef = FirebaseFirestore.getInstance().collection("Coin")
+    private val db = FirebaseFirestore.getInstance()
+    private val coinRef = db.collection("Coin")
 
     fun coinIn (objectDBCoin: String, inputCoin: Long) {
 

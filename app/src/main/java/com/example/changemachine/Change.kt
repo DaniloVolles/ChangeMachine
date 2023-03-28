@@ -1,15 +1,20 @@
 package com.example.changemachine
 
+import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import com.example.changemachine.databinding.ActivityChangeBinding
 import com.example.changemachine.entity.*
+import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 
 class Change : AppCompatActivity() {
 
     private lateinit var binding: ActivityChangeBinding
     private val coinRef = FirebaseFirestore.getInstance().collection("Coin")
+    var reference: DocumentReference? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +44,23 @@ class Change : AppCompatActivity() {
                 }
         }
 
+    }
+
+    fun countCoin (document: String) {
+        coinRef
+            .whereEqualTo("quantity", this)
+            .get()
+            .addOnSuccessListener { result ->
+            for (document in result) {
+//                Toast.makeText(this, "Moeda encontrada.", Toast.LENGTH_SHORT).show()
+                reference = coinRef.document("/Coin/" + document.id)
+//                calculateChange(reference!!)
+                Log.d(ContentValues.TAG, "${document.id} => ${document.data}")
+            }
+        }
+            .addOnFailureListener { exception ->
+                Log.w(ContentValues.TAG, "Error getting documents", exception)
+            }
     }
 
     private fun calculateChange() {
