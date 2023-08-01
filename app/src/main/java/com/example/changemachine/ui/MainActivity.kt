@@ -1,8 +1,9 @@
-package com.example.changemachine
+package com.example.changemachine.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.changemachine.R
 
 import com.example.changemachine.databinding.ActivityMainBinding
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.viewDB.setOnClickListener {
-            val intent = Intent(this,ViewCoins::class.java)
+            val intent = Intent(this, ViewCoins::class.java)
             startActivity(intent)
         }
 

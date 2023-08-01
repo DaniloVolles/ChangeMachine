@@ -1,8 +1,8 @@
-package com.example.changemachine
+package com.example.changemachine.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
+import com.example.changemachine.R
 import com.example.changemachine.databinding.ActivityViewCoinsBinding
 import com.google.firebase.firestore.FirebaseFirestore
 

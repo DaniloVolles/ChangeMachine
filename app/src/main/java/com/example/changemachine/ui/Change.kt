@@ -1,10 +1,10 @@
-package com.example.changemachine
+package com.example.changemachine.ui
 
 import android.content.ContentValues
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
+import com.example.changemachine.R
 import com.example.changemachine.databinding.ActivityChangeBinding
 import com.example.changemachine.entity.*
 import com.google.firebase.firestore.DocumentReference
